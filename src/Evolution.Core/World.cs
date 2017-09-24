@@ -141,7 +141,7 @@ namespace Evolution.Core
 			for (var i = 0; i < 60; i++)
 			{
 				SpawnEntity(() => new Food(false));
-				SpawnEntity(() => new Food(true));
+				SpawnEntity(() => new Food(false));
 			}
 		}
 

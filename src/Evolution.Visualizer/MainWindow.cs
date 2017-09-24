@@ -84,7 +84,7 @@ namespace Evolution.Visualizer
 								evolutionCanvas1.Invalidate();
 								Text = $@"Generation: {m_generation}, LT: {m_maxGenerationLifetime}";
 
-								textBox1.Clear();
+								textBox2.Text = m_generationLifetime.ToString();
 								textBox1.Text = string.Join(Environment.NewLine, m_generationLifetimeStats.Select(x => x));
 							}));
 						}

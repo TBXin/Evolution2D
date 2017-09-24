@@ -48,7 +48,7 @@ namespace Evolution.Core
 		{
 			Health = 35;
 
-			SightVector = s_rnd.Next(0, 8 + 1);
+			SightVector = s_rnd.Next(0, 8);
 
 			if (genome == null)
 			{
@@ -100,7 +100,7 @@ namespace Evolution.Core
 
 		public override void Process(World world)
 		{
-			for (var i = 0; i < 10; i++)
+			for (var i = 0; i < 20; i++)
 			{
 				var instruction = m_instructions[m_instructionIndex];
 
